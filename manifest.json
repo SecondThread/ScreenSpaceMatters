@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "ScreenSpaceMatters",
+  "version": "1.0",
+
+  "description": "Removes obnoxious sticky political ads from reactjs.org so you can get back to work.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reactjs.org/**"],
+      "js": ["screenSpaceMatters.js"]
+    }
+  ]
+
+}
